@@ -27,18 +27,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
 
-  // Contactformulier (demo — vervang door echte verzendmethode, bv. Formspree)
+  // Contactformulier -> opent WhatsApp met een vooraf ingevuld bericht
+  const WHATSAPP_NUMBER = "31628370072"; // 06 28 37 00 72
   const form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
+      const data = new FormData(form);
+      const naam = (data.get("name") || "").toString().trim();
+      const email = (data.get("email") || "").toString().trim();
+      const doel = (data.get("goal") || "").toString().trim();
+      const bericht = (data.get("message") || "").toString().trim();
+
+      const tekst =
+        `Hoi Ertugrul, ik kom via de website.%0A%0A` +
+        `Naam: ${naam}%0A` +
+        `E-mail: ${email}%0A` +
+        `Doel: ${doel}` +
+        (bericht ? `%0A%0A${encodeURIComponent(bericht)}` : "");
+
       const note = document.getElementById("form-note");
       if (note) {
-        note.textContent =
-          "Bedankt! Dit is nog een demo-formulier — koppel het aan e-mail/WhatsApp om berichten echt te ontvangen.";
+        note.textContent = "WhatsApp wordt geopend met je bericht. Druk daar op verzenden.";
         note.style.color = "var(--brand-2)";
       }
-      form.reset();
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${tekst}`, "_blank");
     });
   }
 });
