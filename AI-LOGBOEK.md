@@ -27,6 +27,25 @@ Dit logboek legt vast welke AI welk werk heeft geleverd aan deze website, wannee
 
 ---
 
+## 2026-06-30 — Volledige herbouw v3: redactioneel licht thema + echte fotografie
+
+**Door:** Claude Opus 4.8 via Claude Code
+**Skill toegepast:** `frontend-design`
+
+**Aanleiding:** Bob vond v2 nog steeds een "landingspagina-vibe" hebben. Nieuwe referenties aangeleverd (Aroha, Minglee, Fitnesxia op Dribbble). Kernverschil benoemd: die voorbeelden leven van **echte fotografie + dichte redactionele opbouw**, terwijl v2 lege placeholder-vlakken en een generiek donker verloop had. Opdracht: weggooien en opnieuw bouwen vanuit de voorbeelden.
+
+**Wat:**
+- **Echte fotografie toegevoegd:** 10 royalty-free Unsplash-foto's gedownload naar `assets/img/` (gym, training, eten) — lokaal opgeslagen zodat ze gegarandeerd laden en production-safe zijn. Coach vervangt later door eigen beeld.
+- **Nieuw design-systeem (`assets/style.css` v3):** licht/cream canvas (`#f4efe6`), warme bijna-zwarte tekst, **Archivo** (heavy display 900) + **Hanken Grotesk** (body). Cyaan `#43d8e5` als highlight-marker/fills, diepere teal `#0c8f9e` voor leesbare accenttekst op licht. Aroha-stijl.
+- **Homepage volledig opnieuw (`index.html`):** asymmetrische hero (enorme kop + info-paneel met avatar-stack + grote vol-bleed foto met zwevende kaartjes), marquee, stats-band, probleem-cards, geannoteerde trainingsfoto, voeding-split met maaltijdfoto, feature-grid, 3-stappen, testimonials met gezichten + sterren, **dramatische donkere CTA met foto-achtergrond**, footer met groot woordmerk "DE FITNESS COACH".
+- **Nieuwe componenten:** `.float-card` (zwevende data-labels op beeld), `.annotated`, `.split-media`, `.stats-band`, `.price-card.featured` (donker uitgelicht), `.cta-photo`, `.footer-wordmark`, `.mark` (cyaan highlight achter een woord).
+- Subpagina's liften mee via gedeelde class-namen; over-mij kreeg een echte foto; lettertypes overal omgezet naar Archivo.
+- Geverifieerd met live preview: hero desktop + tarieven-pricing (witte cards + donkere featured) renderen sterk.
+
+**Nog nodig van Bob:** eigen coach-foto's (vervangen stockbeeld), prijzen, echte reviews.
+
+---
+
 ## 2026-06-30 — Bold redesign: van landingspagina-look naar premium website
 
 **Door:** Claude Opus 4.8 via Claude Code

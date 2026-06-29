@@ -7,7 +7,7 @@
   <meta name="description" content="Online fitness- en voedingscoaching voor mannen die buikvet willen verliezen. Trainen én Turks eten, zonder al het denkwerk. 1-op-1 begeleiding door Ertugrul." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -29,53 +29,51 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero hero-home">
+  <section class="hero-home">
     <div class="container">
-      <div class="hero-grid">
+      <div class="hero-top">
         <div class="hero-anim">
           <span class="eyebrow">Online fitness- &amp; voedingscoaching</span>
-          <h1>Buikvet verliezen <span class="gradient-text">zonder je leven om te gooien.</span></h1>
+          <h1>
+            <span class="line">Buikvet</span>
+            <span class="line">verliezen <span class="mark">zonder</span></span>
+            <span class="line">je leven om</span>
+            <span class="line">te gooien.</span>
+          </h1>
+        </div>
+        <aside class="hero-panel hero-anim">
+          <div class="avatars">
+            <div class="stack">
+              <img src="assets/img/man-lift.jpg" alt="" />
+              <img src="assets/img/man-portrait.jpg" alt="" />
+              <img src="assets/img/training.jpg" alt="" />
+              <span>1:1</span>
+            </div>
+            <div class="meta">
+              <b>12+ jaar ervaring</b>
+              <span>persoonlijke begeleiding</span>
+            </div>
+          </div>
           <p class="lead">
             Nooit meer twijfelen over wat je moet eten of hoe je moet trainen. Ik neem het denkwerk
-            uit handen met een plan dat past bij jou, inclusief het Turkse eten waar je van houdt.
+            uit handen, inclusief het Turkse eten waar je van houdt.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="contact.html">Start met een gratis intake →</a>
-            <a class="btn btn-ghost btn-lg" href="coaching.html">Bekijk de coaching</a>
+            <a class="btn btn-primary" href="contact.html">Gratis intake →</a>
+            <a class="btn btn-ghost" href="coaching.html">Bekijk de coaching</a>
           </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="n">12<span>+</span></div>
-              <div class="l">jaar ervaring als coach</div>
-            </div>
-            <div class="hero-stat">
-              <div class="n">100<span>%</span></div>
-              <div class="l">persoonlijke aandacht</div>
-            </div>
-            <div class="hero-stat">
-              <div class="n">1<span>:</span>1</div>
-              <div class="l">begeleiding op maat</div>
-            </div>
-          </div>
-        </div>
+        </aside>
+      </div>
 
-        <div class="hero-media">
-          <div class="media-frame">
-            <!-- Plaats hier een foto van de coach: vervang dit blok door
-                 <img src="assets/coach.jpg" alt="Ertugrul - De Fitness Coach" /> -->
-            <div class="slot-mark">
-              <div class="glyph">🏋️</div>
-              Foto van Ertugrul<br />
-              <span class="placeholder-note">assets/coach.jpg</span>
-            </div>
-            <div class="media-badge">
-              <span class="pulse"></span>
-              <div>
-                <b>Plekken beschikbaar</b>
-                <span>Start deze maand nog</span>
-              </div>
-            </div>
-          </div>
+      <div class="hero-photo hero-anim">
+        <img src="assets/img/hero-man.jpg" alt="Man traint met een barbell in de sportschool" />
+        <div class="float-card tl">
+          <span class="pulse"></span>
+          <div><b>Plekken vrij</b><span>start deze maand</span></div>
+        </div>
+        <div class="float-card br">
+          <span class="fi">🍽️</span>
+          <div><b>Turks eten blijft</b><span>geen verbodslijst</span></div>
         </div>
       </div>
     </div>
@@ -89,49 +87,47 @@
     </div>
   </div>
 
-  <!-- PROBLEEM / HERKENNING -->
-  <section>
+  <!-- STATS -->
+  <section style="padding-top: clamp(48px,6vw,80px); padding-bottom: clamp(48px,6vw,80px);">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">01 — Herken je dit?</span>
-        <h2>Je traint wel, maar dat buikvet blijft zitten</h2>
-        <p class="lead">Niet gek. De meeste mannen lopen vast op dezelfde drie dingen.</p>
-      </div>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <span class="num">01</span>
-          <div class="icon">😤</div>
-          <h3>Je voelt je niet lekker in je lijf</h3>
-          <p>Kleren zitten strakker, je energie zakt, en op foto's herken je jezelf niet meer terug.</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="num">02</span>
-          <div class="icon">🔁</div>
-          <h3>Je houdt het niet vol</h3>
-          <p>Je begint vol goede moed, maar na een paar weken zakt het in. Een streng dieet hou je niet vol.</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="num">03</span>
-          <div class="icon">🤯</div>
-          <h3>Te veel tegenstrijdige info</h3>
-          <p>De ene zegt dit, de ander dat. Op internet word je gek van alle "regels". Wat werkt nou écht?</p>
-        </div>
+      <div class="stats-band reveal">
+        <div class="stat-box"><div class="n">12<em>+</em></div><div class="l">Jaar ervaring</div></div>
+        <div class="stat-box"><div class="n">1:1</div><div class="l">Persoonlijke begeleiding</div></div>
+        <div class="stat-box"><div class="n">3<em>×</em></div><div class="l">Trainen per week</div></div>
+        <div class="stat-box"><div class="n">100<em>%</em></div><div class="l">Online &amp; flexibel</div></div>
       </div>
     </div>
   </section>
 
-  <!-- OPLOSSING -->
+  <!-- PROBLEEM -->
   <section class="section-alt">
     <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">01 / Herken je dit?</span>
+        <h2>Je traint wel, maar dat<br />buikvet blijft zitten</h2>
+        <p class="lead">Niet gek. De meeste mannen lopen vast op dezelfde drie dingen.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal"><span class="num">01</span><div class="icon">😤</div><h3>Niet lekker in je lijf</h3><p>Kleren zitten strakker, je energie zakt, en op foto's herken je jezelf niet meer terug.</p></div>
+        <div class="card reveal d1"><span class="num">02</span><div class="icon">🔁</div><h3>Je houdt het niet vol</h3><p>Je begint vol goede moed, maar na een paar weken zakt het in. Een streng dieet hou je niet vol.</p></div>
+        <div class="card reveal d2"><span class="num">03</span><div class="icon">🤯</div><h3>Te veel tegenstrijdige info</h3><p>De ene zegt dit, de ander dat. Online word je gek van alle "regels". Wat werkt nou écht?</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AANPAK / annotated photo -->
+  <section>
+    <div class="container">
       <div class="split">
-        <div class="photo-placeholder reveal">
-          📸 [Foto van de coach in actie]<br /><br />
-          <span class="placeholder-note">Plaats hier een foto: assets/coach.jpg</span>
+        <div class="annotated reveal">
+          <img src="assets/img/training.jpg" alt="Man traint buiten met battle ropes" />
+          <div class="float-card tl"><span class="fi">🏋️</span><div><b>Training op maat</b><span>thuis of sportschool</span></div></div>
+          <div class="float-card br"><span class="fi">📈</span><div><b>Wekelijks bijsturen</b><span>via WhatsApp</span></div></div>
         </div>
         <div class="reveal d1">
-          <span class="section-index">02 — De oplossing</span>
-          <h2>Eén duidelijk plan. Eén coach. Geen gedoe.</h2>
-          <p class="lead" style="margin-top:16px;">
+          <span class="section-index">02 / De oplossing</span>
+          <h2>Eén plan. Eén coach.<br />Geen gedoe.</h2>
+          <p class="lead" style="margin-top:18px;">
             Geen standaard schema uit een app, maar begeleiding op maat. We bouwen samen aan
             een routine die je wél volhoudt, en waarin Turks eten gewoon thuishoort.
           </p>
@@ -141,44 +137,31 @@
             <li>Wekelijkse bijsturing zodat je blijft doorgaan</li>
             <li>Direct contact met mij wanneer je vastloopt</li>
           </ul>
-          <a class="btn btn-primary mt-32" href="coaching.html">Zo werkt mijn coaching →</a>
+          <a class="btn btn-dark mt-32" href="coaching.html">Zo werkt mijn coaching →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS BAND -->
-  <section>
-    <div class="container">
-      <div class="stats-band">
-        <div class="stat-box reveal"><div class="n">12+</div><div class="l">Jaar ervaring</div></div>
-        <div class="stat-box reveal d1"><div class="n">1:1</div><div class="l">Persoonlijke begeleiding</div></div>
-        <div class="stat-box reveal d2"><div class="n">3×</div><div class="l">Trainen per week</div></div>
-        <div class="stat-box reveal d3"><div class="n">100%</div><div class="l">Online &amp; flexibel</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AANPAK / STAPPEN -->
+  <!-- VOEDING / Turks eten -->
   <section class="section-alt">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">03 — De aanpak</span>
-        <h2>In 3 stappen naar resultaat</h2>
-        <p class="lead">Helder en zonder verrassingen. Zo ziet jouw traject eruit.</p>
-      </div>
-      <div class="grid grid-3 steps">
-        <div class="step reveal">
-          <h3>Gratis intake</h3>
-          <p>We bespreken je doel, je situatie en wat tot nu toe niet werkte. Geen verplichtingen.</p>
+      <div class="split">
+        <div class="reveal">
+          <span class="section-index">03 / Voeding</span>
+          <h2>Afvallen zónder je<br />favoriete eten op te geven</h2>
+          <p class="lead" style="margin-top:18px;">
+            De meeste diëten falen omdat ze niet bij je leven passen. Bij mij draait het om voeding
+            die je volhoudt: met het Turkse eten waar je van houdt gewoon op het menu.
+          </p>
+          <ul class="checklist">
+            <li>Geen verbodslijst, wel slimme keuzes</li>
+            <li>Voeding afgestemd op jouw smaak en cultuur</li>
+            <li>Praktisch en simpel, ook met een druk leven</li>
+          </ul>
         </div>
-        <div class="step reveal d1">
-          <h3>Jouw plan op maat</h3>
-          <p>Je krijgt een training- en voedingsplan dat past bij jouw leven, werk en smaak.</p>
-        </div>
-        <div class="step reveal d2">
-          <h3>Begeleiding &amp; bijsturen</h3>
-          <p>We houden contact via WhatsApp, sturen wekelijks bij en zorgen dat je het volhoudt.</p>
+        <div class="split-media reveal d1">
+          <img src="assets/img/food-healthy.jpg" alt="Gezonde maaltijd met groenten, ei en avocado" />
         </div>
       </div>
     </div>
@@ -188,8 +171,8 @@
   <section>
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-index">04 — Wat je krijgt</span>
-        <h2>Alles wat je nodig hebt om door te zetten</h2>
+        <span class="section-index">04 / Wat je krijgt</span>
+        <h2>Alles wat je nodig hebt<br />om door te zetten</h2>
       </div>
       <div class="grid grid-2">
         <div class="feature reveal"><span class="fi">🎯</span><div><h3>Plan op maat</h3><p>Training en voeding afgestemd op jouw doel, niveau en agenda. Geen kopie van iemand anders.</p></div></div>
@@ -200,11 +183,26 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- AANPAK STAPPEN -->
   <section class="section-alt">
     <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">05 / De aanpak</span>
+        <h2>In 3 stappen naar resultaat</h2>
+      </div>
+      <div class="grid grid-3 steps">
+        <div class="step reveal"><h3>Gratis intake</h3><p>We bespreken je doel, je situatie en wat tot nu toe niet werkte. Geen verplichtingen.</p></div>
+        <div class="step reveal d1"><h3>Jouw plan op maat</h3><p>Je krijgt een training- en voedingsplan dat past bij jouw leven, werk en smaak.</p></div>
+        <div class="step reveal d2"><h3>Begeleiding &amp; bijsturen</h3><p>We houden contact via WhatsApp, sturen wekelijks bij en zorgen dat je het volhoudt.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="container">
       <div class="section-head center reveal">
-        <span class="section-index" style="display:inline-block">05 — Resultaten</span>
+        <span class="section-index">06 / Resultaten</span>
         <h2>Wat klanten zeggen</h2>
         <p class="placeholder-note">Placeholder — vervang door echte reviews uit je assetsmap.</p>
       </div>
@@ -212,32 +210,33 @@
         <div class="quote-card reveal">
           <div class="stars">★★★★★</div>
           <p class="quote">Voor het eerst hou ik het echt vol. Ik eet nog steeds gewoon thuis mee en val tóch af.</p>
-          <p class="quote-author"><span class="av">★</span><span>[Naam klant]<span>[resultaat, bv. -8 kg]</span></span></p>
+          <p class="quote-author"><img class="av" src="assets/img/man-portrait.jpg" alt="" /><span>[Naam klant]<span>[resultaat, bv. -8 kg]</span></span></p>
         </div>
         <div class="quote-card reveal d1">
           <div class="stars">★★★★★</div>
           <p class="quote">Geen gezeur, gewoon een duidelijk plan en iemand die me op scherp houdt.</p>
-          <p class="quote-author"><span class="av">★</span><span>[Naam klant]<span>[resultaat]</span></span></p>
+          <p class="quote-author"><img class="av" src="assets/img/man-lift.jpg" alt="" /><span>[Naam klant]<span>[resultaat]</span></span></p>
         </div>
         <div class="quote-card reveal d2">
           <div class="stars">★★★★★</div>
           <p class="quote">Eindelijk een coach die snapt hoe wij eten. Dat maakte het verschil.</p>
-          <p class="quote-author"><span class="av">★</span><span>[Naam klant]<span>[resultaat]</span></span></p>
+          <p class="quote-author"><img class="av" src="assets/img/man-run.jpg" alt="" /><span>[Naam klant]<span>[resultaat]</span></span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section>
+  <!-- CTA dramatisch -->
+  <section class="dark-section">
     <div class="container">
-      <div class="cta-band reveal">
-        <span class="eyebrow center">Klaar voor de eerste stap?</span>
+      <div class="cta-photo reveal">
+        <img src="assets/img/gym-1.jpg" alt="" />
+        <span class="eyebrow on-dark">Klaar voor de eerste stap?</span>
         <h2>Pak dat buikvet écht aan</h2>
         <p class="lead">Begin met een gratis, vrijblijvende intake. Daarna weet je precies waar je staat en wat je te doen staat.</p>
-        <div class="hero-actions" style="justify-content:center;">
+        <div class="hero-actions">
           <a class="btn btn-primary btn-lg" href="contact.html">Plan je gratis intake →</a>
-          <a class="btn btn-ghost btn-lg" href="tarieven.html">Bekijk de tarieven</a>
+          <a class="btn btn-ghost on-dark btn-lg" href="tarieven.html">Bekijk de tarieven</a>
         </div>
       </div>
     </div>
@@ -272,6 +271,7 @@
           </ul>
         </div>
       </div>
+      <div class="footer-wordmark" aria-hidden="true">DE FITNESS COACH</div>
       <div class="footer-bottom">
         <span>© <span id="year"></span> De Fitness Coach. Alle rechten voorbehouden.</span>
         <span>KvK 86570374 · BTW NL864009628B01</span>
