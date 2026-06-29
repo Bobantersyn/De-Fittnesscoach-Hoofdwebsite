@@ -27,6 +27,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
 
+  // Sticky header krijgt achtergrond zodra je scrollt
+  const header = document.querySelector(".site-header");
+  if (header) {
+    const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  // Scroll-reveal: elementen met .reveal faden in zodra ze in beeld komen
+  const revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && revealEls.length) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+    );
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-visible"));
+  }
+
   // Contactformulier -> opent WhatsApp met een vooraf ingevuld bericht
   const WHATSAPP_NUMBER = "31628370072"; // 06 28 37 00 72
   const form = document.getElementById("contact-form");

@@ -27,6 +27,29 @@ Dit logboek legt vast welke AI welk werk heeft geleverd aan deze website, wannee
 
 ---
 
+## 2026-06-30 — Bold redesign: van landingspagina-look naar premium website
+
+**Door:** Claude Opus 4.8 via Claude Code
+**Skill toegepast:** `frontend-design` (+ globale UI-werkafspraken)
+
+**Aanleiding:** Bob vond dat de site te veel op een dunne landingspagina leek (referenties aangeleverd: Aroha, PulseFit, DEXAFIT op Dribbble — bold beeld, grote display-typografie, sterke accentkleur, rijke secties).
+
+**Wat:**
+- **Design-systeem (`assets/style.css`) volledig herschreven (v2):**
+  - Nieuw lettertype-paar: **Bricolage Grotesque** (display) + **Hanken Grotesk** (body), weg van generieke Inter.
+  - Diepere basis (`#0c1418`), gelaagde cyaan-glows + subtiele grain-textuur (SVG noise) voor atmosfeer.
+  - Grotere type-scale, genummerde sectie-labels, hero-stats, marquee, stats-band, feature-cards, art-directed beeldslots (`media-frame`/`photo-placeholder`), verfijnde pricing/testimonials/FAQ/contact.
+  - Sticky header met scroll-state, scroll-reveals (IntersectionObserver) + gestaffelde hero-load. `prefers-reduced-motion` gerespecteerd.
+  - Alle bestaande class-namen behouden, zodat de subpagina's automatisch meeliften.
+- **Homepage (`index.html`) opnieuw opgebouwd:** asymmetrische hero met beeldpaneel + zwevend "plekken beschikbaar"-kaartje, marquee, probleem (genummerde cards), oplossing-split, stats-band, 3-stappen aanpak, "wat je krijgt"-grid, testimonials, dubbele CTA.
+- **`assets/script.js`:** header scroll-state + scroll-reveal observer toegevoegd.
+- Lettertype-link op alle 5 pagina's omgezet naar Bricolage + Hanken.
+- Geverifieerd met live preview op desktop (1440) én mobiel (375).
+
+**Nog steeds nodig van Bob:** prijzen, echte reviews, coach-foto (`assets/coach.jpg`).
+
+---
+
 ## 2026-06-29 — Bedrijfsgegevens en verhaal ingevuld vanaf info.defitnesscoach.nl
 
 **Door:** Claude Opus 4.8 via Claude Code
