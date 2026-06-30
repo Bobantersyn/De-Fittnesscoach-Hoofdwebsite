@@ -27,6 +27,23 @@ Dit logboek legt vast welke AI welk werk heeft geleverd aan deze website, wannee
 
 ---
 
+## 2026-06-30 — Echte content: coach-foto's, before/after-pagina, reviews; Tarieven weg
+
+**Door:** Claude Opus 4.8 via Claude Code
+
+**Wat (op verzoek van Bob, met materiaal uit `~/Desktop/De Fitnesscoach`):**
+- **Echte foto's** geïmporteerd en geoptimaliseerd naar `assets/img/` (sips): studio-portret van Ertugrul (`coach-portrait`), gym-foto's (`coach-gym`, `coach-train`), 6 branded before/afters (`ba-1..6`), 3 klantgezichten (`client-1..3`).
+- **Hero herbouwd:** echte coach-portretfoto rechts met zwevende kaartjes; avatar-stack met echte klantgezichten ("tevreden klanten, 5-sterren reviews").
+- **Echte reviews** (3 transcripts van Instagram-review-screenshots: kbly.dnz "25 kg lichter", ginkel070, johnny_van_heusden) i.p.v. placeholder-quotes, op home én resultaten.
+- **Nieuwe pagina `resultaten.html`** (Before & After): galerij van 6 transformaties + reviews + CTA. Ook teaser-sectie op de homepage.
+- **Tarieven verwijderd:** `tarieven.html` weg (`git rm`), uit nav + footer van alle pagina's; vervangen door **Resultaten**. Nav nu: Home, Over mij, Coaching, Resultaten, Contact.
+- **Over mij** gebruikt nu de echte coach-portretfoto.
+- Geverifieerd met live preview: hero met coach + before/after-galerij renderen sterk.
+
+**Bron-privacy:** before/afters en reviews waren al publiek op de oude landingspagina; bewust gebruikt. Coach-foto's van Ertugrul zelf.
+
+---
+
 ## 2026-06-30 — Volledige herbouw v3: redactioneel licht thema + echte fotografie
 
 **Door:** Claude Opus 4.8 via Claude Code
