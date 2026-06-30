@@ -198,6 +198,12 @@ section { padding: clamp(64px, 9vw, 130px) 0; position: relative; }
 .ba-card .cap { padding: 16px 20px; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 8px; font-size: 0.95rem; }
 .ba-card .cap em { color: var(--brand-deep); font-style: normal; font-family: var(--font-display); }
 
+/* ---------- Maaltijdkaarten (voorbeeld uit de voedingsapp) ---------- */
+.meals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.meal { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line-soft); box-shadow: var(--shadow-sm); transition: transform 0.2s ease; }
+.meal:hover { transform: translateY(-5px); }
+.meal img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+
 /* ---------- Hero (subpagina's) ---------- */
 .hero { padding: clamp(56px, 8vw, 110px) 0 clamp(40px, 6vw, 72px); text-align: center; }
 .hero h1 { max-width: 18ch; margin: 0 auto 22px; }
