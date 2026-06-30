@@ -125,6 +125,8 @@ p { text-wrap: pretty; }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 82px; }
 .brand { display: flex; align-items: center; gap: 11px; font-family: var(--font-display); font-weight: 800; font-size: 1.22rem; letter-spacing: -0.04em; }
 .brand .dot { width: 13px; height: 13px; border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 4px rgba(67,216,229,0.25); }
+.brand .logo-mark { height: 34px; width: auto; display: block; }
+.site-footer .brand .logo-mark { height: 32px; }
 .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; }
 .nav-links a { font-size: 0.96rem; color: var(--ink-soft); font-weight: 600; transition: color 0.15s ease; }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
